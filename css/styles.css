@@ -783,21 +783,39 @@ p {
 }
 
 .modal-button {
+  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
+  align-items: center;
+  justify-content: center;
 
   border: none;
 
   width: 30px;
   height: 30px;
 
-  background-image: url(../images/close-black-18dp.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--text-white-color);
-
+  cursor: pointer;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+
+  /* background-color: rgb(73, 53, 53); */
+} 
+
+.modal-svg {
+  /* position: absolute; */
+  top: 8px;
+  right: 8px;
+  
+
+  border: none;
+
+  width: 18px;
+  height: 18px;
+  /* fill: #2196f3; */
+
+
+  
+  
+  
 }
