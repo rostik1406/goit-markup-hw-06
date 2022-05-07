@@ -475,17 +475,78 @@
             </li>
           </ul>
         </div>
+
+        <div class="third-footer">
+          <label>Подпишитесь на рассылку</label>
+          <input type="email" placeholder="E-mail" />
+          <button type="button">Подписаться</button>
+        </div>
       </div>
     </footer>
 
     <!-- Модальне вікно -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-window">
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
         <button class="modal-button" data-modal-close>
           <svg class="modal-svg">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+
+        <form action="" class="modal-form" autocomplete="on">
+          <label for="modal-name" class="form-label">Имя</label>
+          <div class="modal-container">
+            <input
+              type="text"
+              class="form-input"
+              name="modal-name"
+              id="modal-name"
+            />
+            <svg class="modal-form-svg">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <label for="modal-tel" class="form-label">Телефон</label>
+          <div class="modal-container">
+            <input
+              type="tel"
+              class="form-input"
+              name="modal-tel"
+              id="modal-tel"
+            />
+            <svg class="modal-form-svg">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <label for="modal-email" class="form-label">Почта</label>
+
+          <div class="modal-container">
+            <input
+              type="email"
+              class="form-input"
+              name="modal-email"
+              id="modal-email"
+            />
+            <svg class="modal-form-svg">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <label for="modal-comment" class="form-label">Комментарий</label>
+          <textarea
+            name="modal-comment"
+            class="form-textarea"
+            id="modal-comment"
+            rows="5"
+            placeholder="Введите текст"
+          ></textarea>
+
+          <button type="submit" class="button-submit">Отправить</button>
+        </form>
       </div>
     </div>
 
