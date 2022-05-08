@@ -610,6 +610,61 @@ p {
   height: 20px;
 }
 
+/* -------------------Подпишитесь--------------- */
+.third-footer {
+  margin-left: 93px;
+}
+
+.footer-label {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
+.footer-btn-form {
+  position: relative;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  padding-left: 16px;
+
+  color: var(--text-white-color);
+  background-color: var(--background-h-f-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-button {
+  /* position: relative; */
+
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.fotter-btn-icon {
+  width: 24px;
+  height: 24px;
+
+  fill: var(--text-white-color);
+}
+
 /* СТИЛІ ДО ПОРТФОЛІО */
 .navigation-list {
   display: flex;
@@ -934,6 +989,7 @@ p {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .icon {
@@ -982,13 +1038,21 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
+  margin: 0 auto;
+
   width: 200px;
   height: 50px;
 
+  cursor: pointer;
   border: none;
   background-color: var(--accent-color);
   color: var(--text-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: var(--accent-color);
 }
