@@ -626,10 +626,6 @@ p {
   color: var(--text-white-color);
 }
 
-.footer-btn-form {
-  position: relative;
-}
-
 .footer-input {
   width: 358px;
   height: 50px;
@@ -644,26 +640,44 @@ p {
 }
 
 .footer-button {
-  /* position: relative; */
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 12px;
 
   width: 200px;
   height: 50px;
 
   border: none;
+  cursor: pointer;
   color: var(--text-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.fotter-btn-icon {
+.footer-button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+
+  background-image: url(../images/envelope-f.svg);
+  background-size: contain;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--accent-color);
+}
+
+/* .fotter-btn-icon {
   width: 24px;
   height: 24px;
 
   fill: var(--text-white-color);
-}
+} */
 
 /* СТИЛІ ДО ПОРТФОЛІО */
 .navigation-list {
@@ -931,15 +945,6 @@ p {
   border-color: var(--accent-color);
 }
 
-/* .form-input:focus + .modal-form-svg
-.form-input:not(:placeholder-shown) + .modal-form-svg {
-  border-color: var(--accent-color);
-} */
-
-/* .form-input:focus + .modal-form-svg {
-  fill: var(--accent-color);
-} */
-
 .modal-form-svg {
   position: absolute;
   top: 50%;
@@ -1050,9 +1055,4 @@ p {
   color: var(--text-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.button-submit:hover,
-.button-submit:focus {
-  background-color: var(--accent-color);
 }
