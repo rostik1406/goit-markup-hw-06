@@ -528,6 +528,7 @@ p {
 }
 
 .first-footer {
+  flex-grow: 1;
   align-items: center;
 }
 
@@ -842,8 +843,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  padding: 40px;
 
   background: var(--text-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -868,6 +868,8 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
+  background: transparent;
+
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
@@ -890,7 +892,6 @@ p {
 
 /* -----------------------form-------------------- */
 .modal-title {
-  padding-top: 40px;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -910,6 +911,7 @@ p {
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -970,6 +972,7 @@ p {
   height: 120px;
 
   margin-bottom: 20px;
+  padding-top: 10px;
 
   font-weight: 400;
   font-size: 12px;
@@ -986,12 +989,11 @@ p {
   --webkit-appearance: none;
   --moz-appearance: none;
   appearance: none;
-
-  position: absolute;
 }
 
 .label-checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-bottom: 30px;
@@ -1006,10 +1008,6 @@ p {
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
-
-  transition-property: background-image;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 
 .checkbox-h:focus + .icon {
